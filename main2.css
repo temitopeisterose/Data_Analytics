@@ -1,22 +1,30 @@
 body#home {
     background: linear-gradient(180deg, #0b1120, #020617);
     color: #e5e7eb;
-    font-family: "Inter", "Segoe UI", sans-serif;
 }
 body#home .navbar {
-    background: rgba(2, 6, 23, 0.85) !important;
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+    background: rgba(2, 6, 23, 0.9) !important;
+}
+
+body#home .navbar-brand,
+body#home .navbar-nav .nav-link {
+    color: #e5e7eb !important;
 }
 
 body#home .navbar-nav .nav-link:hover {
     color: #38bdf8 !important;
 }
 body#home .hero {
-    background: rgba(15, 23, 42, 0.75);
-    backdrop-filter: blur(14px);
-    border: 1px solid rgba(255,255,255,0.08);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+    background: rgba(15, 23, 42, 0.85);
+    box-shadow: 0 28px 60px rgba(0,0,0,0.6);
+}
+
+body#home .hero h1 {
+    color: #f9fafb;
+}
+
+body#home .hero .lead {
+    color: #9ca3af;
 }
 
 body#home .highlight {
@@ -26,29 +34,30 @@ body#home .custom-btn {
     background: #38bdf8;
     border: 2px solid #38bdf8;
     color: #020617;
-    border-radius: 999px;
-    font-weight: 600;
 }
 
 body#home .custom-btn:hover {
     background: #0ea5e9;
     border-color: #0ea5e9;
-    box-shadow: 0 0 18px rgba(56, 189, 248, 0.45);
+    box-shadow: 0 14px 30px rgba(56, 189, 248, 0.45);
 }
 body#home .fancy-card {
-    background: rgba(15, 23, 42, 0.85);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255,255,255,0.08);
-    box-shadow: 0 14px 40px rgba(0,0,0,0.55);
-}
-
-body#home .fancy-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 22px 60px rgba(0,0,0,0.7);
-}
-body#home .form-div {
     background: rgba(15, 23, 42, 0.9);
     border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.55);
+}
+
+body#home .fancy-card .card-title {
+    color: #f9fafb;
+}
+
+body#home .fancy-card .card-text {
+    color: #9ca3af;
+}
+body#home .form-div {
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 28px 65px rgba(0,0,0,0.6);
 }
 
 body#home .form-control {
@@ -71,13 +80,16 @@ body#home .socicons-list li a:hover {
     background: #38bdf8;
     color: #020617;
 }
+body#home .copyright {
+    color: rgba(229, 231, 235, 0.7);
+}
 body#home::before {
     content: "";
     position: fixed;
     inset: 0;
     background-image:
-        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
     background-size: 70px 70px;
     pointer-events: none;
 }
